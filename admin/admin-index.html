@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - LearnHub</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <h1>Learn<span>Hub</span> Admin</h1>
+      </div>
+
+      <div class="sidebar-menu">
+        <div class="menu-category">Main</div>
+        <a href="#" class="menu-item active"> <i>📊</i> Dashboard </a>
+        <a href="#" class="menu-item"> <i>📚</i> Courses </a>
+        <a href="#" class="menu-item"> <i>👥</i> Users </a>
+        <a href="#" class="menu-item"> <i>💰</i> Sales </a>
+
+        <div class="menu-category">Management</div>
+        <a href="#" class="menu-item"> <i>🗂️</i> Categories </a>
+        <a href="#" class="menu-item"> <i>🏆</i> Instructors </a>
+        <a href="#" class="menu-item"> <i>💬</i> Comments </a>
+        <a href="#" class="menu-item"> <i>⭐</i> Reviews </a>
+
+        <div class="menu-category">System</div>
+        <a href="#" class="menu-item"> <i>⚙️</i> Settings </a>
+        <a href="#" class="menu-item"> <i>📢</i> Announcements </a>
+        <a href="#" class="menu-item"> <i>📊</i> Reports </a>
+      </div>
+
+      <div class="user-section">
+        <div class="user-avatar">A</div>
+        <div class="user-info">
+          <div class="user-name">Admin User</div>
+          <div class="user-role">Super Admin</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <h1 class="page-title">Dashboard</h1>
+
+        <div class="header-actions">
+          <div class="search-bar">
+            <i>🔍</i>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <button class="notification-button">
+            🔔
+            <span class="notification-badge">3</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard-content">
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Total Enrollments</span>
+              <div class="stat-icon blue">👥</div>
+            </div>
+            <div class="stat-value">12,582</div>
+            <div class="stat-change positive">+14% from last month</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Revenue</span>
+              <div class="stat-icon purple">💰</div>
+            </div>
+            <div class="stat-value">$48,290</div>
+            <div class="stat-change positive">+7.5% from last month</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Active Courses</span>
+              <div class="stat-icon green">📚</div>
+            </div>
+            <div class="stat-value">84</div>
+            <div class="stat-change positive">+3 new this month</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">New Users</span>
+              <div class="stat-icon orange">👤</div>
+            </div>
+            <div class="stat-value">392</div>
+            <div class="stat-change negative">-2% from last month</div>
+          </div>
+        </div>
+
+        <!-- Courses & Users Section -->
+        <div class="content-grid">
+          <!-- Courses Table -->
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Recent Courses</h2>
+              <a href="#" class="view-all">View All</a>
+            </div>
+
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Instructor</th>
+                    <th>Enrollments</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="course-info">
+                        <div class="course-image"></div>
+                        <div>
+                          <div class="course-name">
+                            Complete Web Development Bootcamp
+                          </div>
+                          <div class="course-category">Development</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Gervs</td>
+                    <td>1,245</td>
+                    <td>$89.99</td>
+                    <td><span class="status active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="course-info">
+                        <div class="course-image"></div>
+                        <div>
+                          <div class="course-name">
+                            UX/UI Design Fundamentals
+                          </div>
+                          <div class="course-category">Design</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Anthony</td>
+                    <td>897</td>
+                    <td>$69.99</td>
+                    <td><span class="status active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="course-info">
+                        <div class="course-image"></div>
+                        <div>
+                          <div class="course-name">
+                            Data Science with Python
+                          </div>
+                          <div class="course-category">Data Science</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Gervs</td>
+                    <td>652</td>
+                    <td>$94.99</td>
+                    <td><span class="status draft">Draft</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="course-info">
+                        <div class="course-image"></div>
+                        <div>
+                          <div class="course-name">
+                            Digital Marketing Masterclass
+                          </div>
+                          <div class="course-category">Marketing</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Anthony</td>
+                    <td>423</td>
+                    <td>$79.99</td>
+                    <td><span class="status archived">Archived</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Users & Activity -->
+          <div>
+            <!-- New Users -->
+            <div class="section-card" style="margin-bottom: 20px">
+              <div class="section-header">
+                <h2 class="section-title">New Users</h2>
+                <a href="#" class="view-all">View All</a>
+              </div>
+
+              <ul class="user-list">
+                <li class="user-item">
+                  <div class="user-item-avatar"></div>
+                  <div class="user-item-info">
+                    <div class="user-item-name">Gervs</div>
+                    <div class="user-item-email">Gervs@gmail.com</div>
+                  </div>
+                  <div class="user-item-date">Today</div>
+                </li>
+                <li class="user-item">
+                  <div class="user-item-avatar"></div>
+                  <div class="user-item-info">
+                    <div class="user-item-name">Anthony</div>
+                    <div class="user-item-email">Anthony@gmail.com</div>
+                  </div>
+                  <div class="user-item-date">Yesterday</div>
+                </li>
+                <li class="user-item">
+                  <div class="user-item-avatar"></div>
+                  <div class="user-item-info">
+                    <div class="user-item-name">Gervs</div>
+                    <div class="user-item-email">Gervs@gmail.com</div>
+                  </div>
+                  <div class="user-item-date">Yesterday</div>
+                </li>
+                <li class="user-item">
+                  <div class="user-item-avatar"></div>
+                  <div class="user-item-info">
+                    <div class="user-item-name">Anthony</div>
+                    <div class="user-item-email">Anthony@gmail.com</div>
+                  </div>
+                  <div class="user-item-date">2 days ago</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="section-card">
+              <div class="section-header">
+                <h2 class="section-title">Recent Activity</h2>
+              </div>
+
+              <ul class="activity-list">
+                <li class="activity-item">
+                  <div class="activity-dot blue"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">
+                      <span class="activity-name">Anthony</span> added a new
+                      course
+                    </div>
+                    <div class="activity-time">Just now</div>
+                  </div>
+                </li>
+                <li class="activity-item">
+                  <div class="activity-dot green"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">
+                      <span class="activity-name">Gervs</span> enrolled in
+                      "UX/UI Design"
+                    </div>
+                    <div class="activity-time">2 hours ago</div>
+                  </div>
+                </li>
+                <li class="activity-item">
+                  <div class="activity-dot orange"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">
+                      <span class="activity-name">Anthony</span> updated course
+                      content
+                    </div>
+                    <div class="activity-time">5 hours ago</div>
+                  </div>
+                </li>
+                <li class="activity-item">
+                  <div class="activity-dot red"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">
+                      <span class="activity-name">System</span> scheduled
+                      maintenance
+                    </div>
+                    <div class="activity-time">Yesterday</div>
+                  </div>
+                </li>
+                <li class="activity-item">
+                  <div class="activity-dot blue"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">
+                      <span class="activity-name">Gervs</span> replied to a
+                      comment
+                    </div>
+                    <div class="activity-time">Yesterday</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
