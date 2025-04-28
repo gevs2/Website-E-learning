@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub - Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="header-logo">Learn<span>Hub</span></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Signup Container -->
+    <div class="auth-container">
+      <div class="auth-header">
+        <h1>Create Account</h1>
+        <p>Join LearnHub and start your learning journey today</p>
+      </div>
+
+      <div class="auth-form">
+        <form action="/signup" method="post">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              class="form-control"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Create a password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              class="form-control"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+
+          <div class="terms">
+            By signing up, you agree to our <a href="#">Terms of Service</a> and
+            <a href="#">Privacy Policy</a>
+          </div>
+
+          <button type="submit" class="btn">
+            <a href="login.html" id="create-account">Create Account</a>
+          </button>
+        </form>
+
+        <div class="social-login">
+          <p>Or sign up with</p>
+          <div class="social-buttons">
+            <button class="social-btn">G</button>
+            <button class="social-btn">f</button>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          Already have an account? <a href="/login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
