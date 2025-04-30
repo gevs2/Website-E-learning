@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="../css/admin-course.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">Learn<span>Hub</span><br />Admin</div>
+      <div class="menu-item">
+        <span>📊</span> <a href="admin-index.html">Dashboard</a>
+      </div>
+      <div class="menu-item active">
+        <span>📚</span> <a href="#">Courses</a>
+      </div>
+      <div class="menu-item">
+        <span>👤</span> <a href="admin-user.html">Users</a>
+      </div>
+      <div class="menu-item">
+        <span>💰</span> <a href="admin-sales.html">Sales</a>
+      </div>
+      <div class="menu-item">
+        <span>⚙️</span> <a href="admin-settings.html">Settings</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <h1 class="page-title">Courses</h1>
+        <input type="text" class="search-box" placeholder="Search courses..." />
+      </div>
+
+      <div class="action-bar">
+        <div>
+          <button class="button-outline">Filter</button>
+          <button class="button-outline">Sort</button>
+        </div>
+        <button class="button">+ Add Course</button>
+      </div>
+
+      <div class="course-list">
+        <div class="section-header">
+          <div class="section-title">All Courses (84)</div>
+        </div>
+
+        <div class="course-list-header">
+          <div>Course</div>
+          <div>Instructor</div>
+          <div>Enrollments</div>
+          <div>Price</div>
+          <div>Status</div>
+          <div>Actions</div>
+        </div>
+
+        <div class="course-item">
+          <div>
+            <div class="course-title">Complete Web Development Bootcamp</div>
+            <div class="course-category">Development</div>
+          </div>
+          <div>Gervs</div>
+          <div>1,245</div>
+          <div>$89.99</div>
+          <div><span class="status-badge status-active">Active</span></div>
+          <div>
+            <span class="action-icon">✏️</span>
+            <span class="action-icon">🗑️</span>
+          </div>
+        </div>
+
+        <div class="course-item">
+          <div>
+            <div class="course-title">UX/UI Design Fundamentals</div>
+            <div class="course-category">Design</div>
+          </div>
+          <div>Anthony</div>
+          <div>897</div>
+          <div>$69.99</div>
+          <div><span class="status-badge status-active">Active</span></div>
+          <div>
+            <span class="action-icon">✏️</span>
+            <span class="action-icon">🗑️</span>
+          </div>
+        </div>
+
+        <div class="course-item">
+          <div>
+            <div class="course-title">Data Science with Python</div>
+            <div class="course-category">Data Science</div>
+          </div>
+          <div>Gervs</div>
+          <div>652</div>
+          <div>$94.99</div>
+          <div><span class="status-badge status-draft">Draft</span></div>
+          <div>
+            <span class="action-icon">✏️</span>
+            <span class="action-icon">🗑️</span>
+          </div>
+        </div>
+
+        <div class="course-item">
+          <div>
+            <div class="course-title">Digital Marketing Masterclass</div>
+            <div class="course-category">Marketing</div>
+          </div>
+          <div>Anthony</div>
+          <div>423</div>
+          <div>$79.99</div>
+          <div><span class="status-badge status-archived">Archived</span></div>
+          <div>
+            <span class="action-icon">✏️</span>
+            <span class="action-icon">🗑️</span>
+          </div>
+        </div>
+
+        <div class="course-item">
+          <div>
+            <div class="course-title">Mobile App Development</div>
+            <div class="course-category">Development</div>
+          </div>
+          <div>Gervs</div>
+          <div>532</div>
+          <div>$74.99</div>
+          <div><span class="status-badge status-active">Active</span></div>
+          <div>
+            <span class="action-icon">✏️</span>
+            <span class="action-icon">🗑️</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="page-button active">1</button>
+        <button class="page-button">2</button>
+        <button class="page-button">3</button>
+        <button class="page-button">4</button>
+        <button class="page-button">Next</button>
+      </div>
+
+      <div class="category-list">
+        <div class="section-header">
+          <div class="section-title">Course Categories</div>
+          <button class="button-outline">+ Add Category</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Courses</th>
+              <th>Students</th>
+              <th>Revenue</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Development</td>
+              <td>12</td>
+              <td>5,830</td>
+              <td>$152,428</td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>8</td>
+              <td>2,945</td>
+              <td>$87,942</td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Marketing</td>
+              <td>6</td>
+              <td>1,873</td>
+              <td>$65,214</td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Business</td>
+              <td>9</td>
+              <td>2,187</td>
+              <td>$73,695</td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Data Science</td>
+              <td>5</td>
+              <td>1,432</td>
+              <td>$56,925</td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

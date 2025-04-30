@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="../css/admin-user.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">Learn<span>Hub</span><br />Admin</div>
+      <div class="menu-item">
+        <span>📊</span> <a href="admin-index.html">Dashboard</a>
+      </div>
+      <div class="menu-item">
+        <span>📚</span> <a href="admin-course.html">Courses</a>
+      </div>
+      <div class="menu-item active"><span>👤</span> <a href="#">Users</a></div>
+      <div class="menu-item">
+        <span>💰</span> <a href="admin-sales.html">Sales</a>
+      </div>
+      <div class="menu-item">
+        <span>⚙️</span> <a href="admin-settings.html">Settings</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="content-header">
+        <h2>Users</h2>
+        <input type="text" class="search-box" placeholder="Search users..." />
+      </div>
+
+      <div class="action-bar">
+        <div class="button-group">
+          <button class="btn">Filter</button>
+          <button class="btn">Sort</button>
+        </div>
+        <button class="btn btn-primary">+ Add User</button>
+      </div>
+
+      <div class="content-body">
+        <div class="table-header">All Users (2,453)</div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Enrolled Courses</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="user-cell">
+                  <div class="user-avatar">👤</div>
+                  <div>Sarah Johnson</div>
+                </div>
+              </td>
+              <td>sarah.j@example.com</td>
+              <td>Student</td>
+              <td>3</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="user-cell">
+                  <div class="user-avatar">👤</div>
+                  <div>Michael Chen</div>
+                </div>
+              </td>
+              <td>m.chen@example.com</td>
+              <td>Student</td>
+              <td>1</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="user-cell">
+                  <div class="user-avatar">👤</div>
+                  <div>Alex Rodriguez</div>
+                </div>
+              </td>
+              <td>alex.r@example.com</td>
+              <td>Instructor</td>
+              <td>0</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="user-cell">
+                  <div class="user-avatar">👤</div>
+                  <div>Emily Williams</div>
+                </div>
+              </td>
+              <td>e.williams@example.com</td>
+              <td>Student</td>
+              <td>2</td>
+              <td><span class="status-badge status-pending">Pending</span></td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="user-cell">
+                  <div class="user-avatar">👤</div>
+                  <div>James Smith</div>
+                </div>
+              </td>
+              <td>j.smith@example.com</td>
+              <td>Admin</td>
+              <td>0</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              <td>
+                <span class="action-icon">✏️</span>
+                <span class="action-icon">🗑️</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <div class="page-btn active">1</div>
+          <div class="page-btn">2</div>
+          <div class="page-btn">3</div>
+          <div class="page-btn">4</div>
+          <div class="page-btn next">Next</div>
+        </div>
+
+        <div class="stats-container">
+          <div class="stats-header">User Statistics</div>
+          <div class="stats-row">
+            <div>Student: 2,245</div>
+            <div>Instructor: 68</div>
+            <div>Admin: 13</div>
+          </div>
+          <div class="stats-row">
+            <div>Active: 2,156</div>
+            <div>Pending: 237</div>
+            <div>Inactive: 60</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

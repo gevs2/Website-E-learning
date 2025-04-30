@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  background-color: #f5f7fa;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #4e5bf2;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+.sidebar div a {
+  color: white;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.logo span {
+  color: #333;
+}
+
+.menu-item {
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-item span {
+  margin-right: 10px;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.content-header {
+  padding: 20px;
+  border-bottom: 1px solid #e6e9ef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.search-box {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 14px;
+}
+
+.action-bar {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4a60e5;
+  color: white;
+  border: none;
+}
+
+/* Table Styles */
+.content-body {
+  padding: 0 20px 20px 20px;
+}
+
+.table-header {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f8f9fa;
+}
+
+th {
+  text-align: left;
+  padding: 15px 20px;
+  color: #555;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+td {
+  padding: 15px 20px;
+  border-top: 1px solid #e6e9ef;
+  color: #333;
+  font-size: 14px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #e6e9ef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.status-active {
+  background-color: #e6f7e6;
+  color: #28a745;
+}
+
+.status-pending {
+  background-color: #fff5e6;
+  color: #fd7e14;
+}
+
+.status-inactive {
+  background-color: #f7e6e6;
+  color: #dc3545;
+}
+
+.action-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.page-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.page-btn.active {
+  background-color: #4a60e5;
+  color: white;
+  border: none;
+}
+
+.page-btn.next {
+  width: auto;
+  padding: 0 15px;
+}
+
+/* User Stats */
+.stats-container {
+  margin-top: 40px;
+  border: 1px solid #e6e9ef;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.stats-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+  color: #555;
+}

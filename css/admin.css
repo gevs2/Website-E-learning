@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -10,104 +11,47 @@ body {
   display: flex;
   min-height: 100vh;
 }
-
-/* Sidebar */
+/* sidebar */
 .sidebar {
   width: 250px;
-  background-color: #4c6ef5;
+  height: 100vh;
+  background-color: #4e5bf2;
   color: white;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
+  left: 0;
+  top: 0;
+  padding: 20px;
 }
-
-.sidebar-logo {
-  padding: 0 20px 20px;
-  font-weight: bold;
-  font-size: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+.sidebar div a {
+  color: white;
 }
-
-.sidebar-logo h1 {
-  margin-left: 10px;
+.logo {
   font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
-.sidebar-logo h1 span {
+.logo span {
   color: #333;
-}
-.sidebar-menu {
-  flex-grow: 1;
-}
-
-.menu-category {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #8a8d9f;
-  padding: 15px 20px 5px;
-  letter-spacing: 0.5px;
 }
 
 .menu-item {
-  padding: 12px 20px;
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  color: #ccc;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.menu-item.active {
-  background-color: rgba(77, 86, 244, 0.2);
-  color: white;
-  border-left: 3px solid #4056f4;
+  cursor: pointer;
 }
 
 .menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.menu-item i {
+.menu-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-item span {
   margin-right: 10px;
-  opacity: 0.7;
-  width: 20px;
-  text-align: center;
-}
-
-.user-section {
-  padding: 15px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-}
-
-.user-avatar {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #4056f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.user-info {
-  flex-grow: 1;
-}
-
-.user-name {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.user-role {
-  font-size: 12px;
-  color: #8a8d9f;
 }
 
 /* Main Content */
